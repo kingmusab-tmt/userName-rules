@@ -15,4 +15,9 @@ Username letters can be lowercase and uppercase.
 
 Usernames have to be at least two characters long. A two-character username can only use alphabet letters as characters.
 
+let username = "JackOfAllTrades";
+let userCheck = /^[\w][a-z]+[0-9]*$|^[a-z]\d\d+$/i; // Change this line
+let result = userCheck.test(username);
+console.log(result)
+
 
